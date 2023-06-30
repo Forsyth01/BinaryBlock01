@@ -176,7 +176,7 @@ const Home = () => {
                 <img
                   src="/img/Buttonn.png"
                   alt=""
-                  className=" xl:h-[50vh] m-auto "
+                  className=" xl:h-[50vh m-auto "
                 />
               </div>
             </div>

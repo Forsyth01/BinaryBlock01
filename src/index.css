@@ -34,3 +34,29 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px 0px 120px 0px;
   margin: auto;
 } */
+
+.accordion {
+  /* background-color: #eee; */
+  color: rgb(117,174,51);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(204, 204, 204, 0.091); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: black;
+  overflow: hidden;
+  color: white;
+}
