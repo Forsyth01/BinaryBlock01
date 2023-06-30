@@ -92,7 +92,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Card 4 */}
+            {/* Card 4 */} 
             <div className="_0shine w-[100%]">
               <div className="card-img">
                 <img
@@ -108,43 +108,8 @@ const Home = () => {
 
       {/* BinaryBlock Protocol */}
 
-      {/* <div className="pt-20 xl:pt-2 text-center xl:w-[90%] m-auto">
-          <div className="space-y-2 my-12">
-            <h1 className="font-bold xl:font-semibold text-2xl xl:text-3xl">BinaryBlock Protocol</h1>
-            <p className=" text-[#92D940]">
-              A web3 protocol for earning crypto on ethereum.
-            </p>
-          </div>
-          <div className="_0shine pb-12 px-12">
-            <div className="pt-16 pb-32 md:pb-3 ">
-              <h1 className="text-2xl text-left xl:font-semibold xl:text-3xl">View Available BIBK</h1>
-            </div>
-
-            <div className="space-y-10 md:flex gap-10 items-center justify-between">
-           
-                <div className="space-y-4 md:w-[70%]">
-                  <input
-                    type="text"
-                    placeholder="Enter token ID"
-                    className="px-3 w-[80%] md:w-full bg-transparent border-b outline-none border-[#fff]"
-                  />
-                  <div className="">
-                    <button className="bg-[#92D940] hover:bg-[#8ccc42] rounded-2xl text-sm px-10 py-2 md:py-4 w-[70%] md:w-[100%] text-black">
-                      View Available BIBK
-                    </button>
-                  </div>
-                </div>
-
-              <div className="elemen w-[70%] m-auto">
-            
-                <img src="/img/Buttonn.png" alt="" className="m-auto" />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
       <div className="xl:w-[90%] m-auto">
-        <div className="text-center my-12">
+        <div className="text-center py-20 ">
           <h1 className="font-bold xl:font-semibold text-2xl xl:text-3xl">
             BinaryBlock Protocol
           </h1>
@@ -159,8 +124,8 @@ const Home = () => {
                 View Available BIBK
               </h1>
             </div>
-            <div className="md:flex justify-between gap-10 items-center w-full space-y-5">
-              <div className="space-y-3 xl:w-[100%] w-[100%] md:[70%] m-auto">
+            <div className="md:flex justify-between gap-10 items-cente w-full space-y-5">
+              <div className="space-y-3 xl:w-[70%] w-[100%] md:w-[60%] m-auto">
                 <input
                   type="text"
                   placeholder="Enter token ID"

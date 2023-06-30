@@ -23,7 +23,7 @@ const Navbar = () => {
     {
       link: (
         <p className="" onClick={()=> setMenu(false)}>
-          <Link to="/faq">FAQs</Link>
+          <Link to="/faqs">FAQs</Link>
         </p>
       ),
     },
@@ -65,7 +65,7 @@ const Navbar = () => {
           <button className="bg-[#92D940] rounded border border-[#fff] px-3 py-2 xl:hidden">
             <AiOutlineMenu onClick={handleOpen} className="text-2xl rounded text-black" />
           </button>
-          <button className="bg-[#92D940] hover:bg-[#87c73f] hover:cursor-pointer py-2 px-3 rounded-xl text-black hidden xl:flex">
+          <button className="bg-[#92D940] hover:bg-[#71a832]  hover:cursor-pointer py-2 px-3 rounded-xl text-black hidden xl:flex">
             Launch App
           </button>
         </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
               <p className="">{link.link}</p>
             </div>
           ))}
-          <button className="bg-[#92D940] hover:bg-[#87c73f] hover:cursor-pointer py-2 px-3 rounded-xl text-black ">
+          <button className="bg-[#92D940] hover:bg-[#71a832] hover:cursor-pointer py-2 px-3 rounded-xl text-black ">
             Launch App
           </button>
         </div>

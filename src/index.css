@@ -26,20 +26,12 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 23px;
 }
 
-/* .element{
-  background-image: url(../public/img/Buttonn.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 40px 0px 120px 0px;
-  margin: auto;
-} */
-
 .accordion {
   /* background-color: #eee; */
   color: rgb(117,174,51);
   cursor: pointer;
   padding: 18px;
+  margin-top: 40px;
   width: 100%;
   border: none;
   text-align: left;
@@ -47,6 +39,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   transition: 0.4s;
   font-weight: 700;
+  text-align: center;
 }
 
 .active, .accordion:hover {
@@ -54,9 +47,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 16px 18px;
   display: none;
   background-color: black;
   overflow: hidden;
   color: white;
 }
+
