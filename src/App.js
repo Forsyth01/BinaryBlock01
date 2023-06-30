@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App ">
       <Navbar />
-      {/* <Nav/> */}  
       <div className="m-auto w-[95%] md:w-[75%] xl:w-[82%]">
         <Routes>
           <Route path="/" element={<Home/>} />
