@@ -53,13 +53,13 @@ const Team = () => {
 
   return (
     <div className="pb-16 pt-28">
-        <div className="text-center md:w-[70%] w-[90%] m-auto space-y-2 py-5">
+        <div className="text-center md:w-[75%] w-[90%] m-auto space-y-2 py-5">
             <h1 className="font-semibold xl:text-3xl text-2xl">The BinaryBlock Team</h1>
             <p className="">We understands that having a strong team and a proven strategy in place is fundamental to the success of the project. As such, the portfolio construct of the team is primarily driven by it focus on the blockchain industry. The team consists of impressive experts in the blockchain development niche, management professionals, and others with a proven track record of success.</p>
         </div>
         <div className="">
       {team.map((team) => (
-        <div className="_0shine py-20 px-5 space-y-2 my-12 md:w-[60%] w-[90%] m-auto">
+        <div className="_0shine py-20 px-5 space-y-2 my-12 md:w-[75%] w-[90%] m-auto">
           <h1 className="text-xl">{team.name}</h1>
           <p className="text-[#6bb218]">{team.position}</p>
           <p className="text-justify">{team.experience}</p>
