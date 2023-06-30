@@ -143,7 +143,7 @@ const Home = () => {
           </div>
         </div> */}
 
-      <div className="w-[90%] m-auto">
+      <div className="xl:w-[90%] m-auto">
         <div className="text-center my-12">
           <h1 className="font-bold xl:font-semibold text-2xl xl:text-3xl">
             BinaryBlock Protocol
@@ -160,7 +160,7 @@ const Home = () => {
               </h1>
             </div>
             <div className="md:flex justify-between gap-10 items-center w-full space-y-5">
-              <div className="space-y-3 xl:w-[100%] w-[70%] m-auto">
+              <div className="space-y-3 xl:w-[100%] w-[100%] md:[70%] m-auto">
                 <input
                   type="text"
                   placeholder="Enter token ID"
@@ -176,7 +176,7 @@ const Home = () => {
                 <img
                   src="/img/Buttonn.png"
                   alt=""
-                  className="h-[40vh] xl:h-[50vh] m-auto"
+                  className=" xl:h-[50vh] m-auto w-full"
                 />
               </div>
             </div>
