@@ -172,11 +172,11 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <div className="w-full">
+              <div className="">
                 <img
                   src="/img/Buttonn.png"
                   alt=""
-                  className=" xl:h-[50vh] m-auto w-full"
+                  className=" xl:h-[50vh] m-auto "
                 />
               </div>
             </div>
