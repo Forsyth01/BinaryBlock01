@@ -1,4 +1,5 @@
 import React from "react";
+import Input from "../Components/Input";
 
 const Home = () => {
   return (
@@ -117,36 +118,10 @@ const Home = () => {
             A web3 protocol for earning crypto on ethereum.
           </p>
         </div>
-        <div className="_0shine">
-          <div className="m-auto w-[80%] py-5 pb-12">
-            <div className="pt-16 pb-28 md:pb-3 ">
-              <h1 className="text-2xl text-left xl:font-semibold xl:text-3xl">
-                View Available BIBK
-              </h1>
-            </div>
-            <div className="md:flex justify-between gap-10 items-cente w-full space-y-5">
-              <div className="space-y-3 xl:w-[70%] w-[100%] md:w-[60%] m-auto">
-                <input
-                  type="text"
-                  placeholder="Enter token ID"
-                  className=" bg-transparent outline-none border-b w-full"
-                />
-                <div className="">
-                  <button className="bg-[#92D940] hover:bg-[#8ccc42] py-2 rounded-2xl w-full">
-                    View Available BIBK
-                  </button>
-                </div>
-              </div>
-              <div className="">
-                <img
-                  src="/img/Buttonn.png"
-                  alt=""
-                  className=" xl:h-[50vh m-auto "
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+
+        {/* Input */}
+  <Input/>
+
       </div>
 
       {/* Upcomin Events */}
