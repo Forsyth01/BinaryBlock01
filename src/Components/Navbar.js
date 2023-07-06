@@ -7,24 +7,30 @@ const Navbar = () => {
   const [links, setLinks] = useState([
     {
       link: (
-        <p className="" onClick={()=> setMenu(false)}>
-          <Link to="https://gplap.gitbook.io/binaryblock/">Documentation</Link>
-        </p>
+        <Link to="https://gplap.gitbook.io/binaryblock/">
+          <p className="" onClick={() => setMenu(false)}>
+            Documentation
+          </p>
+        </Link>
       ),
     },
 
     {
       link: (
-        <p className="" onClick={()=> setMenu(false)}>
-          <Link to="/team">Team</Link>
-        </p>
+        <Link to="/team">
+          <p className="" onClick={() => setMenu(false)}>
+            Team
+          </p>
+        </Link>
       ),
     },
     {
       link: (
-        <p className="" onClick={()=> setMenu(false)}>
-          <Link to="/faqs">FAQs</Link>
-        </p>
+        <Link to="/faqs">
+          <p className="" onClick={() => setMenu(false)}>
+            Faqs
+          </p>
+        </Link>
       ),
     },
   ]);
@@ -37,7 +43,7 @@ const Navbar = () => {
   const elementRef = useRef(null);
 
   useEffect(() => {
-   gsap.from(".ease", {
+    gsap.from(".ease", {
       opacity: 0,
       y: -20,
       duration: 0.5,
@@ -45,9 +51,8 @@ const Navbar = () => {
     });
   }, [handleOpen]);
 
-
   return (
-    <div className={ "fixed bg-black w-full py-3 z-10" }>
+    <div className={"fixed bg-black w-full py-3 z-10"}>
       <div className="flex items-center justify-between w-[85%] md:w-[90%] xl:w-[96%] m-auto ">
         <div className="logo md:flex gap-20 items-center">
           <Link to="/" className="hover:cursor-pointer">
@@ -63,7 +68,10 @@ const Navbar = () => {
         </div>
         <div className="icon">
           <button className="bg-[#92D940] rounded border border-[#fff] px-3 py-2 xl:hidden">
-            <AiOutlineMenu onClick={handleOpen} className="text-2xl rounded text-black" />
+            <AiOutlineMenu
+              onClick={handleOpen}
+              className="text-2xl rounded text-black"
+            />
           </button>
           <button className="bg-[#92D940] hover:bg-[#71a832]  hover:cursor-pointer py-2 px-3 rounded-xl text-black hidden xl:flex">
             Launch App
@@ -71,18 +79,20 @@ const Navbar = () => {
         </div>
       </div>
 
-      {menu  && <div className=" " >
-        <div className=" xl:hidden w-[80%]   m-auto space-y-3 py-5 ease">
-          {links.map((link) => (
-            <div className="">
-              <p className="">{link.link}</p>
-            </div>
-          ))}
-          <button className="bg-[#92D940] hover:bg-[#71a832] hover:cursor-pointer py-2 px-3 rounded-xl text-black ">
-            Launch App
-          </button>
+      {menu && (
+        <div className=" ">
+          <div className=" xl:hidden w-[80%]   m-auto space-y-3 py-5 ease">
+            {links.map((link) => (
+              <div className="">
+                <p className="">{link.link}</p>
+              </div>
+            ))}
+            <button className="bg-[#92D940] hover:bg-[#71a832] hover:cursor-pointer py-2 px-3 rounded-xl text-black ">
+              Launch App
+            </button>
+          </div>
         </div>
-      </div>}
+      )}
     </div>
   );
 };

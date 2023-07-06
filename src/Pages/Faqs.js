@@ -43,7 +43,7 @@ export default function Faqs() {
   },[])
   return (
     <div className="m-auto w-[80%] py-28">
-      <h1 className="text-center text-3xl">Frequently Asked Questions</h1>
+      <h1 className="text-center text-3xl font-semibold">Frequently Asked Questions</h1>
    <div className="space-y-">
         <button class="accordion _0shine mt-5 text-center">
           {" "}
