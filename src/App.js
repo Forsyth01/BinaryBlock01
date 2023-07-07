@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Team from "./Pages/Team";
 import Home from "./Pages/Home";
 import Faqs from "./Pages/Faqs";
+import Bibkcoinstaking from "./Pages/Bibkcoinstaking";
+import Bibkcoin from "./Pages/Bibkcoin";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />
             <Route path="/faqs" element={<Faqs />} />
+            <Route path="/bibkcoinstaking" element={<Bibkcoinstaking/>} />
+            <Route path="/bibkcoin" element={<Bibkcoin/>} />
           </Routes>
         </div>
         <Footer />

@@ -1,37 +1,66 @@
 import { useEffect, useState } from "react";
-
+import $ from "jquery";
+import axios from 'axios'
 const Input = () => {
   const [formData, setFormData] = useState();
+
   const [bnryData, setBnryData] = useState(null);
   const [bibkData, setBibkData] = useState(null);
 
   const [bnry, setBnry] = useState(null);
   const [bibk, setBibk] = useState(null);
   const [eset, setEset] = useState(false);
+  const [decimal,setDecimal] = useState('')
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    var xhr = new XMLHttpRequest();
-    var fData = new FormData();
 
-    fData.append("submitNftId", "NftId");
-    fData.append("decimal", formData);
+    // const formdata = new formData()
 
-    xhr.open("POST", "submitcodex.php");
-    xhr.send(fData);
+    // formdata.append('submitNftId','NftId')
+    // formdata.append('decimal',decimal)
+    try {
+      const response = await axios.post(`https://binaryblock.io/binary/submitcodex.php`,{submit:'',decimal:Number(decimal)})
 
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        let response = JSON.parse(xhr.responseText);
-        if (response.eset) {
-          setBnry(response.bnry);
-          setBibk(response.bibk);
-          showResponse();
-        } else {
-          showError(response.msg);
-        }
-      }
-    };
+      // https://binaryblock.io/binary/submitcodex.php
+
+      console.log(response.data)
+    } catch (error) {
+       console.log(error.response)
+    }
+
+  
+
+    // const form = $(e.target);
+    // $.ajax({
+    //     type: "POST",
+    //     url: form.attr("action"),
+    //     data: form.serialize(),
+    //     success(data) {
+    //         setBibkData(data);
+    //     },
+    // });
+    // var xhr = new XMLHttpRequest();
+    // var fData = new FormData();
+
+    // fData.append("submitNftId", "NftId");
+    // fData.append("decimal", formData);
+
+    // xhr.open("POST", "submitcodex.php");
+    // xhr.send(fData);
+
+    // xhr.onreadystatechange = function () {
+    //   if (xhr.readyState == 4 && xhr.status == 200) {
+    //     let response = JSON.parse(xhr.responseText);
+    //     if (response.eset) {
+    //       setBnry(response.bnry);
+    //       setBibk(response.bibk);
+    //       showResponse();
+    //     } else {
+    //       showError(response.msg);
+    //     }
+    //   }
+    // };
   }
 
   function showError(error) {
@@ -61,8 +90,10 @@ const Input = () => {
 
           <div className="md:flex justify-between gap-10 items-cente w-full space-y-5">
             <form
+            action="http://127.0.0.1:5500/my-app/public/submitcodex.php"
               method="post"
               className="space-y-3 xl:w-[70%] w-[100%] md:w-[60%] m-auto"
+              // onSubmit={handleSubmit}
               onSubmit={handleSubmit}
             >
               {/* Input Field */}
@@ -70,8 +101,9 @@ const Input = () => {
                 type="number"
                 placeholder="Enter token ID"
                 className=" bg-transparent outline-none border-b w-full form-control _0bkl"
-                value={formData}
-                onChange={(e) => setFormData(e.target.value)}
+                value={decimal}
+                // onChange={(e) => setFormData(e.target.value)}
+                onChange={(e)=>setDecimal(e.target.value)}
               />
 
               <div className="">

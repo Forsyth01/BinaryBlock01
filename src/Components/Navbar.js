@@ -33,6 +33,25 @@ const Navbar = () => {
         </Link>
       ),
     },
+
+    {
+      link: (
+        <Link to="/bibkcoinstaking">
+          <p className="" onClick={() => setMenu(false)}>
+          bibkcoinstaking
+          </p>
+        </Link>
+      ),
+    },
+    {
+      link: (
+        <Link to="/bibkcoin">
+          <p className="" onClick={() => setMenu(false)}>
+          Bibkcoin
+          </p>
+        </Link>
+      ),
+    },
   ]);
 
   const [menu, setMenu] = useState(false);

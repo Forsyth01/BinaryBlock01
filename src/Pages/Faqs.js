@@ -45,6 +45,15 @@ export default function Faqs() {
     <div className="m-auto w-[80%] py-28">
       <h1 className="text-center text-3xl font-semibold">Frequently Asked Questions</h1>
    <div className="space-y-">
+   <button class="accordion _0shine mt-5 text-center">
+          {" "}
+          What are BinaryBlock protocol?
+        </button>
+        <div class="panel pt-3">
+          <p>
+          BinaryBlock Protocol is a Web3 earning protocol on Ethereum that offers a unique earning opportunity for BinaryBlock asset holders.
+          </p>
+        </div>
         <button class="accordion _0shine mt-5 text-center">
           {" "}
           How does BinaryBlock protocol work?
