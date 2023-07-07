@@ -6,13 +6,12 @@ import {
 } from "@material-tailwind/react";
 
 function Icon({ id, open }) {
- 
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${
-        id === open ? "rotate-180" : ""
-      } h-5 w-5 transition-transform`}
+      className={`${id === open ? "rotate-180" : ""
+        } h-5 w-5 transition-transform`}
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -25,35 +24,26 @@ function Icon({ id, open }) {
 
 export default function Faqs() {
 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-  useEffect(()=>{
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  useEffect(() => {
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-  },[])
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  }, [])
   return (
     <div className="m-auto w-[80%] py-28">
       <h1 className="text-center text-3xl font-semibold">Frequently Asked Questions</h1>
    <div className="space-y-">
-   <button class="accordion _0shine mt-5 text-center">
-          {" "}
-          What are BinaryBlock protocol?
-        </button>
-        <div class="panel pt-3">
-          <p>
-          BinaryBlock Protocol is a Web3 earning protocol on Ethereum that offers a unique earning opportunity for BinaryBlock asset holders.
-          </p>
-        </div>
         <button class="accordion _0shine mt-5 text-center">
           {" "}
           How does BinaryBlock protocol work?
@@ -221,7 +211,7 @@ export default function Faqs() {
             <b> info@binaryblock.io </b>
           </p>
         </div>
-        </div>
+      </div>
     </div>
   );
 }
