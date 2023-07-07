@@ -2,6 +2,9 @@ import React from "react";
 import Input from "../Components/Input";
 
 const Home = () => {
+  function handlebuyBIBK(){
+    alert("Coming soon!")
+  }
   return (
     <div className="pt-28">
       <div className="card pb:28  xl:pb-20 xl:grid grid-cols-2 gap-8">
@@ -52,12 +55,12 @@ const Home = () => {
             </h1>
             <div className="flex items-center gap-12">
               <div className="">
-                <button className="bg-[#6bb218] hover:bg-[#92D940] px-4 py-2 rounded-md text-sm">
+                <button className="bg-[#6bb218] hover:bg-[#92D940] px-4 py-2 rounded-md text-sm" onClick={handlebuyBIBK}>
                   Buy $BIBK
                 </button>
               </div>
               <div className="">
-                <button className="bg-[#6bb218] hover:bg-[#92D940] px-4 py-2 rounded-md text-sm">
+                <button className="bg-[#6bb218] hover:bg-[#92D940] px-4 py-2 rounded-md text-sm" onClick={handlebuyBIBK}>
                   Earn $BIBK
                 </button>
               </div>
