@@ -72,11 +72,7 @@ const Input = () => {
     setBnryData(bibk);
   }
 
-  // function qSel(el) {
-  //   return document.querySelector(el);
-  // }
 
-  // useEffect(() => {}, []);
 
   return (
     <div>
