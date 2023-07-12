@@ -33,25 +33,6 @@ const Navbar = () => {
         </Link>
       ),
     },
-
-    // {
-    //   link: (
-    //     <Link to="/bibkcoinstaking">
-    //       <p className="" onClick={() => setMenu(false)}>
-    //       bibkcoinstaking
-    //       </p>
-    //     </Link>
-    //   ),
-    // },
-    // {
-    //   link: (
-    //     <Link to="/bibkcoin">
-    //       <p className="" onClick={() => setMenu(false)}>
-    //       Bibkcoin
-    //       </p>
-    //     </Link>
-    //   ),
-    // },
   ]);
 
   const [menu, setMenu] = useState(false);
@@ -71,7 +52,7 @@ const Navbar = () => {
   }, [handleOpen]);
 
   return (
-    <div className={"fixed bg-black w-full py-3 z-10"}>
+    <div  className={"fixed bg-black w-full py-3 z-10"}>
       <div className="flex items-center justify-between w-[85%] md:w-[90%] xl:w-[96%] m-auto ">
         <div className="logo md:flex gap-20 items-center">
           <Link to="/" className="hover:cursor-pointer">
