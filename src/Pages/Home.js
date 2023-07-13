@@ -186,16 +186,6 @@ const Home = () => {
                   </p>
                 </a>
               </div>
-              <div className="">
-                <h1 className="font-semibold text-lg xl:text-xl">
-                  Binary Block Genesis:
-                </h1>
-                <a href="https://etherscan.io/address/0x9457e7cd71bebdda47d81248becede74afa22125">
-                  <p className="underline break-words text-[#92D940] cursor-pointer">
-                    0x9457e7cd71bebdda47d81248becede74afa22125
-                  </p>
-                </a>
-              </div>
             </div>
           </div>
         </div>

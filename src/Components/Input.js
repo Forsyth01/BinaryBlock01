@@ -42,8 +42,8 @@ const Input = () => {
     <div>
       <div className="_0shine">
         <div className="m-auto xl:w-[80%] py-5 pb-12 ">
-          <div className="pt-16 pb-28 md:pb-3 ">
-            <h1 className="text-2xl text-left xl:font-semibold xl:text-3xl px-10 xl:px-0">
+          <div className="py-10">
+            <h1 className="text-2xl text-center xl:font-semibold xl:text-3xl px-10 xl:px-0">
               View Available BIBK
             </h1>
           </div>
@@ -52,16 +52,16 @@ const Input = () => {
             <form
               action="http://127.0.0.1:5500/my-app/public/submitcodex.php"
               method="post"
-              className="m-auto space-y-10 xl:space-y-0 md:flex w-full overflow-hidden justify-between items-center"
+              className="m-auto space-y-10 xl:space-y-10 md:fle w-full overflow-hidden justify-between items-center"
               // onSubmit={handleSubmit}
               onSubmit={handleSubmit}
             >
-              <div className="space-y-2 px-10 xl:px-0">
+              <div className="space-y-3 py-8 w-[60%] m-auto">
                 {/* Input Field */}
                 <input
                   type="number"
                   placeholder="Enter token ID"
-                  className=" bg-transparent outline-none border-b w-[100%] form-control _0bkl"
+                  className=" bg-transparent outline-none border-b w-full  form-control _0bkl"
                   value={decimal}
                   onChange={(e) => setDecimal(e.target.value)}
                 />
@@ -69,7 +69,7 @@ const Input = () => {
                 <div className="">
                   <button
                     type="submit"
-                    className="bg-[#92D940] hover:bg-[#8ccc42] py-2 rounded-2xl w-full"
+                    className="bg-[#92D940] hover:bg-[#8ccc42] py-2 w-full rounded-2xl "
                   >
                     View Available BIBK
                   </button>
@@ -78,17 +78,7 @@ const Input = () => {
 
               {/* Input Result */}
               <div className="flex flex-col items-center">
-                <div
-                  className="w-[400px]"
-                  style={{
-                    backgroundImage: `url(${MyBackgroundImage})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    // height: "400px",
-                    // width: "400px",
-                  }}
-                >
-                  <div className="text-center flex flex-col h-[60vh] sm:h-[100vh] lg:h-[60vh] xl:h-[60vh] justify-center space-y-8 ">
+                  <div className="text-center space-y-8 ">
                     <div className="text-[#92D940]">
                       <h1 className="text-lg">Binary Equivalent</h1>
                       <p className="text-white font-bold text-xl">{bnryData}</p>
@@ -99,7 +89,6 @@ const Input = () => {
                       <p className="text-white font-bold text-xl">{bibkData}</p>
                     </div>
                   </div>
-                </div>
               </div>
             </form>
           </div>
