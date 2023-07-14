@@ -49,7 +49,7 @@ const Bibkcoinstaking = () => {
                     // width: "400px",
                   }}
                 >
-                  <div className="flex flex-col h-[55vh] md:h-[100vh] xl:h-[55vh] justify-center space-y-10">
+                  <div className="flex flex-col items-center h-[50vh]  justify-center space-y-10">
                     <div className=" leading-tight text-center">
                       <h1 className="">
                         {" "}
@@ -82,8 +82,8 @@ const Bibkcoinstaking = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center py-10">
-            <button className="bg-[#92D940] hover:bg-[#71a832]  rounded-full text-black font-semibold text-sm py-3 xl:w-[40%] w-[100%] m-auto">
+          <div className="flex flex-col items-center py-10 w-[70%] m-auto">
+            <button className="bg-[#92D940] hover:bg-[#71a832]  rounded-full text-black font-semibold text-sm py-3 w-full">
               Stake BinaryBlock NFT
             </button>
           </div>

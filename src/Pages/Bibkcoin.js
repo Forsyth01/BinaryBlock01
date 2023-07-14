@@ -64,12 +64,9 @@ const Bibkcoin = () => {
                     backgroundImage: `url(${MyBackgroundImage})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
-
-                    // height: "400px",
-                    // width: "400px",
                   }}
                 >
-                  <div className="flex flex-col h-[50vh] lg:h-[50vh] xl:h-[55vh] justify-center space-y-10">
+                  <div className="flex flex-col  items-center sm:h-[50vh]  justify-center space-y-10">
                     <div className=" leading-tight text-center">
                       <h1 className="">
                         {" "}
@@ -119,8 +116,8 @@ const Bibkcoin = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center py-10">
-            <button className="bg-[#92D940] hover:bg-[#71a832]  rounded-full text-black font-semibold text-sm py-3 w-[40%] m-auto">
+          <div className="flex flex-col items-center py-10 w-[50%] m-auto">
+            <button className="bg-[#92D940] hover:bg-[#71a832]  rounded-full text-black font-semibold text-sm py-3 w-full m-auto">
               Balances
             </button>
           </div>

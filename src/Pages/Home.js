@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "../Components/Input";
 import Navbar from "../Components/Navbar";
+import UpcomingEvents from "./UpcomingEvents";
 
 const Home = () => {
   function handlebuyBIBK() {
@@ -138,33 +139,7 @@ const Home = () => {
         </div>
 
         {/* Upcomin Events */}
-        <div className="my-20 text-center">
-          <div className="_0shine py-12 ">
-            <div className="space-y-5">
-              <h1 className="text-2xl xl:text-3xl font-semibold">
-                Upcoming Events
-              </h1>
-              <div className="">
-                <h2 className="text-[#92D940] text-lg xl:text-xl">
-                  Binary Block Mainnet Launch
-                </h2>
-                <p className="">Date: August 2, 2023</p>
-              </div>
-              <div className="">
-                <h2 className="text-[#92D940] xl:text-xl text-lg">
-                  BIBK Airdrops
-                </h2>
-                <p className="">
-                  BinaryBlock Genesis holders <br /> Contributors of Community
-                  growth
-                </p>
-              </div>
-              <div className="">
-                <p className="">Date: TBA</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <UpcomingEvents/>
 
         {/* Smart Contract Address */}
         <div className="my-20 _0shine ">

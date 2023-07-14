@@ -9,6 +9,10 @@ const Input = () => {
   const [eset, setEset] = useState(false);
   const [decimal,setDecimal] = useState('')
   const MyBackgroundImage = "/img/Buttonn.png";
+
+  const Limit=(e)=>{
+       decimal >= 10000 ? setDecimal(9999):setDecimal(e.target.value)
+  }
   
   async function handleSubmit(e) {
     e.preventDefault();
@@ -63,7 +67,7 @@ const Input = () => {
                   placeholder="Enter token ID"
                   className=" bg-transparent outline-none border-b w-full  form-control _0bkl"
                   value={decimal}
-                  onChange={(e) => setDecimal(e.target.value)}
+                  onChange={(e) => Limit(e)}
                 />
 
                 <div className="">
