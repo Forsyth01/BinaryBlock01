@@ -41,7 +41,7 @@ export default function Faqs() {
   }, []);
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="m-auto w-[80%] py-28 md:w-[75%] xl:w-[70%]">
         <h1 className="text-center text-3xl font-semibold">
           Frequently Asked Questions

@@ -2,6 +2,7 @@ import React from "react";
 import Input from "../Components/Input";
 import Navbar from "../Components/Navbar";
 import UpcomingEvents from "./UpcomingEvents";
+import Roadmap from "./Roadmap";
 
 const Home = () => {
   function handlebuyBIBK() {
@@ -9,95 +10,82 @@ const Home = () => {
   }
   return (
     <>
-    <Navbar/>
-      <div id="top" className="pt-28 m-auto w-[95%] md:w-[75%] xl:w-[82%]">
-        <div className="card pb:28  xl:pb-20 xl:grid grid-cols-2 gap-8">
-          <div className="space-y-5 text-justify rounded-xl p-5 xl:p-12 _0shine">
-            <h1 className="text-xl xl:text-2xl font-semibold xl:font-bold">
-              BinaryBlock Genesis
+      {/* <Navbar/> */}
+      <div id="top" className="py-28 ">
+        <div className="card pb:28  xl:pb-20 xl:grid grid-cols-2 gap-4 space-y-10 xl:space-y-0">
+          <div className="space-y-5 text-justify rounded-xl p-5 xl:p-12 _0shine ">
+            <h1 className="xl:text-[40px] text-[28px] font-bold">
+              BinaryBlock NFT
             </h1>
+            <div className="space-y-10">
+              <p className="leading-[25px]">
+                Collect, stake and earn with BinaryBlock to experience minted
+                and stable crypto rewards, BinaryBlock will be your access to
+                unlimited crypto rewards.
+              </p>
 
-            <p className="text-sm md:text-base">
-              A crypto asset that is unique and grants the holder daily access
-              to earn crypto. It is a valuable asset that also provides ongoing
-              earnings opportunities to holders. <br />
-            </p>
-
-            <p className="text-sm md:text-base">
-              Each Binaryblock genesis asset has fixed crypto rewards allocation
-              derived from the asset's binary number. The binary numbers make
-              each NFT unique and distinct, with just 10,000 BinaryBlock genesis
-              on Ethereum.
-            </p>
-
-            <div className="space-y-2">
-              <h3 className="font-bold">Benefits of Binaryblock Genesis</h3>
-              <div className="text-sm leading-6">
-                <li className="">Earn $BIBK daily for over 20 years.</li>
-                <li className="">An asset with a store of value.</li>
-                <li className="">
-                  Grant access to BinaryBlock upcoming events
-                </li>
-              </div>
+              <p className="text-sm md:text-base leading-[25px]">
+                Your BinaryBlock allows you to earn all available crypto within
+                the ecosystem for 20 years plus. There will be a total of
+                100,000 BinaryBlocks.
+              </p>
             </div>
 
             <div className="space-y-2">
-              <h3 className="font-bold">BinaryBlock Genesis NFT Allocation</h3>
-              <div className="leading-6 text-sm">
-                <li className="">2,500 for ecosystem growth & funding</li>
-                <li className="">6,000 for public</li>
-                <li className="">1,500 for teams</li>
+              <div className="bg-[#92D940] p-2 text-black text-center md:w-[313px] rounded-[10px]">
+                <p className="text-[20px]">35%</p>
+                <p className="text-[12px]">35,000 for Growth/Funds</p>
               </div>
+              <p className="">
+                will be rewarded to BinaryBlock holders and contributors to the
+                development and growth of BinaryBlock protocol
+              </p>
             </div>
-
-            <button className="bg-[#0d6efd] text-sm hover:bg-blue-600 rounded-md p-3">
-              Buy BinaryBlock Genesis Asset
-            </button>
-
-            <div className="space-y-4 pt-8">
-              <h1 className="font-bold text-xl xl:text-xl">
-                Maximum BIBK Supply: 30 <br className="flex xl:hidden" />{" "}
-                Million Coins
-              </h1>
-              <div className="flex items-center gap-12">
-                <div className="">
-                  <button
-                    className="bg-[#6bb218] hover:bg-[#92D940] px-4 py-2 rounded-md text-sm"
-                    onClick={handlebuyBIBK}
-                  >
-                    Buy $BIBK
-                  </button>
-                </div>
-                <div className="">
-                  <button
-                    className="bg-[#6bb218] hover:bg-[#92D940] px-4 py-2 rounded-md text-sm"
-                    onClick={handlebuyBIBK}
-                  >
-                    Earn $BIBK
-                  </button>
-                </div>
+            <div className="space-y-2">
+              <div className="bg-[#92D940] p-2 text-black text-center md:w-[313px] rounded-[10px]">
+                <p className="text-[20px]">15%</p>
+                <p className="text-[12px]">15,000 for Team</p>
               </div>
+              <p className="">
+                Core team and other team who assist in the development of
+                BinaryBlock.
+              </p>
+            </div>
+            <div className="space-y-2">
+              <div className="bg-[#92D940] p-2 text-black text-center md:w-[313px] rounded-[10px]">
+                <p className="text-[20px]">30%</p>
+                <p className="text-[12px]">
+                  30,000 for public minting on Ethereum 0.1 ETH
+                </p>
+              </div>
+              <p className="leading-[30px]">
+                will be rewarded to BinaryBlock holders and contributors to the
+                development and growth of BinaryBlock protocol
+              </p>
             </div>
           </div>
 
           {/* Second card */}
           <div className="">
-            <div className="_0shine p-5 lg:p-10 py-10 mb-5 xl:flex gap-8 items-center">
+            <div className="_0shine p-5 lg:p-10 py-10 mb-5 xl:flex gap-4 items-center">
               <div className="card-content xl:w-[98%]">
-                <p className="text-justify xl:text-start text-sm md:text-base ">
-                  The Binaryblock ecosystem currently consists of BinaryBlock
-                  genesis NFTs and $BIBK. They are utility assets used within
-                  the Binaryblock ecosystem for interacting with the protocol.
+                <p className="leading-[25px] text-[16px]">
+                  The binary block ecosystem comprises of BinaryBlock NFT, BIBK,
+                  BLOZ and BINZ tokens with different needs to meet a specific
+                  function in the ecosystem
                 </p>
               </div>
               <div className="card-img xl:w-[80%]">
-                <img src="/img/pic1.png" alt="" className="m-auto xl:w-full" />
+                <img src="/img/pic1.png" alt="" className="m-auto w-[273px]" />
               </div>
             </div>
 
             <div className="xl:flex gap-5">
               {/* Third card */}
               <div className="_0shine border xl:h-[50vh] p-5 xl:p-10 py-10 mb-5 space-y-2 xl:w-[55%]">
+                <div className="pb-3">
+                  <h1 className="text-[32px] font-bold">Goal</h1>
+                </div>
                 <div className="card-content">
                   <p className="text-justify text-sm">
                     BinaryBlock aims to sustain a lifetime of crypto earnings.
@@ -124,25 +112,26 @@ const Home = () => {
 
         {/* BinaryBlock Protocol */}
 
-        <div className="xl:w-[90%] m-auto">
-          <div className="text-center py-20 ">
-            <h1 className="font-bold xl:font-semibold text-2xl xl:text-3xl">
+        <div className="">
+          <div className=" py-10 ">
+            <h1 className="font-bold xl:text-left text-center xl:text-[64px] text-[32px]">
               BinaryBlock Protocol
             </h1>
-            <p className=" text-[#92D940]">
-              A web3 protocol for earning crypto on ethereum.
+            <p className=" text-[#92D940] xl:text-[24px] text-md xl:text-left text-center ">
+              Collect, Hold, Stake and Earn Crypto on Ethereum
             </p>
           </div>
-
           {/* Input */}
           <Input />
         </div>
-
+        <div className="">
+          <Roadmap />
+        </div>
         {/* Upcomin Events */}
-        <UpcomingEvents/>
+        {/* <UpcomingEvents /> */}
 
         {/* Smart Contract Address */}
-        <div className="my-20 _0shine ">
+        {/* <div className="my-20 _0shine ">
           <div className="  py-12 my-20  px-10 xl:px:2 space-y-4 xl:w-[40%] m-auto">
             <div className="space-y-5">
               <h1 className="font-semibold text-2xl xl:text-3xl">
@@ -163,7 +152,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -7,7 +7,8 @@ const Navbar = () => {
   const [links, setLinks] = useState([
     {
       link: (
-        <Link to="https://gplap.gitbook.io/binaryblock/">
+        <Link to="/with">
+        {/* <Link to="https://gplap.gitbook.io/binaryblock/"> */}
           <p className="" onClick={() => setMenu(false)}>
             Documentation
           </p>
@@ -52,7 +53,7 @@ const Navbar = () => {
   }, [handleOpen]);
 
   return (
-    <div  className={"fixed bg-black w-full py-3 z-10"}>
+    <div className={"fixed bg-black w-full py-3 z-10"}>
       <div className="flex items-center justify-between w-[85%] md:w-[90%] xl:w-[96%] m-auto ">
         <div className="logo md:flex gap-20 items-center">
           <Link to="/" className="hover:cursor-pointer">
@@ -73,9 +74,11 @@ const Navbar = () => {
               className="text-2xl rounded text-black"
             />
           </button>
-          <button className="bg-[#92D940] hover:bg-[#71a832]  hover:cursor-pointer py-2 px-3 rounded-xl text-black hidden xl:flex">
-            Launch App
-          </button>
+          <Link to="/app">
+            <button className="bg-[#92D940]  hover:bg-[#71a832]  hover:cursor-pointer py-2 px-3 rounded-xl text-black hidden xl:flex">
+              Launch App
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -87,9 +90,11 @@ const Navbar = () => {
                 <p className="">{link.link}</p>
               </div>
             ))}
-            <button className="bg-[#92D940] hover:bg-[#71a832] hover:cursor-pointer py-2 px-3 rounded-xl text-black ">
-              Launch App
-            </button>
+            <Link to="/app">
+              <button className="bg-[#92D940] my-3 hover:bg-[#71a832] hover:cursor-pointer py-2 px-3 rounded-xl text-black ">
+                Launch App
+              </button>
+            </Link>
           </div>
         </div>
       )}

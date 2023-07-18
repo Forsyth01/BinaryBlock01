@@ -116,7 +116,7 @@ const Team = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="pb-16 pt-28 m-auto w-[95%] md:w-[75%] xl:w-[82%]">
         <div className="text-center md:w-[75%] w-[90%] m-auto space-y-2 py-5">
           <h1 className="font-semibold xl:text-3xl text-2xl">

@@ -2,33 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   margin: 0;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff;
+  color:  #FFFFFF;
   background-color: black;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
-*, ::after, ::before {
+
+p{
+  font-size: 16px;
+}
+
+.no {
+  font-family: 'Days One', sans-serif;
+}
+
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
+
 ._0shine {
   background: rgba(255, 255, 255, 0.01);
-  opacity: 0.8;
+  /* opacity: 0.8; */
   box-shadow: inset 0px 39px 56px -36px rgba(0, 0, 0, 0), inset 0px 7px 11px -4px #FFFFFF, inset 0px -82px 68px -64px rgba(243, 242, 242, 0.3), inset 0px 98px 100px -48px rgba(141, 141, 141, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 0px rgba(227, 222, 255, 0.2);
-  backdrop-filter: blur(7.5px);
-  border-radius: 23px;
+  /* backdrop-filter: blur(7.5px); */
+  border-radius: 51px;
 }
+
+._0shine2 {
+  background: rgba(255, 255, 255, 0.01);
+  /* opacity: 0.8; */
+  box-shadow: inset 0px 39px 56px -36px rgba(0, 0, 0, 0), inset 0px 7px 11px -4px #FFFFFF, inset 0px -82px 68px -64px rgba(243, 242, 242, 0.3), inset 0px 98px 100px -48px rgba(141, 141, 141, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 0px rgba(227, 222, 255, 0.2);
+  /* backdrop-filter: blur(7.5px); */
+}
+
+
 
 .accordion {
   /* background-color: #eee; */
-  color: rgb(117,174,51);
+  color: rgb(117, 174, 51);
   cursor: pointer;
   padding: 18px;
   margin-top: 40px;
@@ -42,8 +64,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
-.active, .accordion:hover {
-  background-color: rgba(204, 204, 204, 0.091); 
+.active,
+.accordion:hover {
+  background-color: rgba(204, 204, 204, 0.091);
 }
 
 .panel {
@@ -53,4 +76,3 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
   color: white;
 }
-
