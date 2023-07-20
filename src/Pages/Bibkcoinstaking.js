@@ -14,10 +14,10 @@ const Bibkcoinstaking = () => {
           <div className="xl:flex items-cente justify-between space-y-4 xl:space-y-0 ">
             <div className="space-y-2">
               <h1 className="text-2xl xl:text-4xl font-bold">
-              BinaryBlock Genesis Staking
+                BinaryBlock Genesis Staking
               </h1>
               <p className="text-[#92D940]">
-              Earn BIBK from BinaryBlock genesis asset.
+                Earn BIBK from BinaryBlock genesis asset.
               </p>
             </div>
             <div className="">
@@ -26,23 +26,18 @@ const Bibkcoinstaking = () => {
               </button>
             </div>
           </div>
-<div className="xl:w-[80%] m-auto py-5 text-center ">
-          
+          <div className="xl:w-[80%] m-auto py-5 text-center ">
             {/* <div className="xl:flex "> */}
             <div className="xl:flex justify-between items-center space-y-10 xl:space-y-0">
               <div className="">
                 <div className="text-white font-bold space-y-2">
-                  <p className=" text-white">
-                  Earn 0.0000 BIBK Daily
-                  </p>
-                  <p className=" text-[#92D940]">
-                  Total BIBK Earned: 0.0000
-                  </p>
+                  <p className=" text-white">Earn 0.0000 BIBK Daily</p>
+                  <p className=" text-[#92D940]">Total BIBK Earned: 0.0000</p>
                 </div>
               </div>
 
               <div className="flex flex-col justify-center text-center">
-              <div
+                <div
                   className="xl:w-[400px] h-[400px] w-[310px] md:w-[400px] m-auto"
                   style={{
                     backgroundImage: `url(${MyBackgroundImage})`,
@@ -71,11 +66,9 @@ const Bibkcoinstaking = () => {
 
               <div className="space-y-5">
                 <div className=" space-y-2">
-                  <p className=" text-white">
-                  Number of NFTs staked: 0000
-                  </p>
+                  <p className=" text-white">Number of NFTs staked: 0000</p>
                   <button className="bg-white text-black text-sm hover:bg-blue-gray-50 rounded-full px-4 py-2">
-                  Unstake NFT
+                    Unstake NFT
                   </button>
                 </div>
                 <div className="text-white ">
@@ -87,12 +80,12 @@ const Bibkcoinstaking = () => {
           </div>
           <div className="flex flex-col items-center py-10 text-center m-auto">
             <button className="bg-[#92D940] hover:bg-[#71a832] xl:w-[30%] px-4 py-4 rounded-full text-black font-semibold text-sm ">
-            Stake BinaryBlock Genesis
+              Stake BinaryBlock Genesis
             </button>
           </div>
         </div>
       </div>
-        <Bibkcoin/>
+      <Bibkcoin />
     </>
   );
 };

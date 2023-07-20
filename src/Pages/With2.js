@@ -1,6 +1,7 @@
 import React from "react";
 import AdminNav from "../Components/AdminNav";
 import Navbar from "../Components/Navbar";
+import Withdraw from "./Withdraw";
 
 const With2 = () => {
   const MyBackgroundImage = "/img/Buttonn.png";
@@ -151,6 +152,7 @@ const With2 = () => {
           </div>
         </div>
       </div>
+      <Withdraw/>
     </>
   );
 };

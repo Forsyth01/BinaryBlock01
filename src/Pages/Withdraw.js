@@ -2,6 +2,7 @@ import React from "react";
 import AdminNav from "../Components/AdminNav";
 import Navbar from "../Components/Navbar";
 import With2 from "./With2";
+import { Link } from "react-router-dom";
 
 const Withdraw = () => {
   const MyBackgroundImage = "/img/Buttonn.png";
@@ -11,20 +12,22 @@ const Withdraw = () => {
       <div className="pt-28">
         <div className="_0shine space-y-5 text-justify rounded-xl p-5 xl:p-12 ">
           <div className="xl:flex space-y-4 xl:space-y-0 items-center justify-between ">
-            <div className="">
+            <div className="cursor:pointer">
+              <Link to = "/">
               <h1 className="text-3xl xl:text-4xl font-bold">$BIBK Staking</h1>
               <p className="text-[#92D940]">Earn 0.00% APY by staking $BIBK</p>
+              </Link>
             </div>
             <div className="">
               <div className="flex items-center gap-2">
                 <div className="">
-                  <p className="">Hold |</p>
+                  <p className="cursor:pointer">Hold |</p>
                 </div>
                 <div className="">
-                  <p className="">Stake |</p>
+                  <p className="cursor:pointer">Stake |</p>
                 </div>
                 <div className="">
-                  <p className="">Earn</p>
+                  <p className="cursor:pointer">Earn</p>
                 </div>
               </div>
             </div>
@@ -126,7 +129,7 @@ const Withdraw = () => {
           </div>
         </div>
       </div>
-      <With2 />
+      {/* <With2 /> */}
     </>
   );
 };
