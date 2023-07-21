@@ -55,7 +55,7 @@ const Team = () => {
       name: "Saint Daniel",
       position: "Product & NFT Designer",
       experience:
-        "Multi-Disciplinary designer with half a decade of experience.",
+        "Passionate and Experienced Designer skilled in multiple design disciplines including but not restricted to Brand/Visual Identity, Advertising/Marketing, Packaging, UI/UX and 3D Modelling. Expertise in creating intuitive digital experiences that solve complex problems and drive business growth. Strong collaborator with a deep understanding of design principles and user research.",
       link: (
         <a
           href="https://www.linkedin.com/in/saint-daniel-a2a308180"

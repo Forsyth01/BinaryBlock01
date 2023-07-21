@@ -151,8 +151,8 @@ const With2 = () => {
             </div>
           </div>
         </div>
-      </div>
       <Withdraw/>
+      </div>
     </>
   );
 };

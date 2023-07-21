@@ -57,7 +57,7 @@ const Input = () => {
             <form
               action="http://127.0.0.1:5500/my-app/public/submitcodex.php"
               method="post"
-              className="m-auto  md:flex items-center flex flex-col justify-center md:justify-between w-full gap-4"
+              className="m-auto  md:flex items-center md:justify-between w-full gap-4"
               // onSubmit={handleSubmit}
               onSubmit={handleSubmit}
             >
