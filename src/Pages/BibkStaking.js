@@ -1,13 +1,14 @@
 import React from "react";
 import AdminNav from "../Components/AdminNav";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const BibkStaking = () => {
   const MyBackgroundImage = "/img/Buttonn.png";
   return (
     <>
-      {/* <Navbar/> */}
-      <div className="py-28 m-auto ">
+      <AdminNav/>
+      <div className="py-28 lg:py-2 xl:py-28 m-auto w-[90%] lg:h-[75vh] xl:h-min lg:flex flex-col justify-center">
         <div className="_0shine space-y-5 text-justify rounded-xl p-5 xl:p-12 ">
           <div className="xl:flex space-y-4 xl:space-y-0 items-center justify-between ">
             <div className="">
@@ -70,7 +71,7 @@ const BibkStaking = () => {
                     // width: "400px",
                   }}
                 >
-                  <div className="flex flex-col h-[50vh] md:h-[20vh] xl:h-[50vh] justify-center space-y-2">
+                  <div className="flex flex-col h-[400px] justify-center space-y-2">
                     <div className=" leading-tight text-center">
                       <h1 className="">
                         {" "}
@@ -128,6 +129,7 @@ const BibkStaking = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

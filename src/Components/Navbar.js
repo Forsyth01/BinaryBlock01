@@ -7,12 +7,12 @@ const Navbar = () => {
   const [links, setLinks] = useState([
     {
       link: (
-        <Link to="/with">
-        {/* <Link to="https://gplap.gitbook.io/binaryblock/"> */}
+        // <Link to="/with">
+        <a href="https://gplap.gitbook.io/binaryblock/" target="_blank">
           <p className="" onClick={() => setMenu(false)}>
             Documentation
           </p>
-        </Link>
+        </a>
       ),
     },
 
@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <div className={"fixed bg-black w-full py-3 z-10"}>
-      <div className="flex items-center justify-between w-[85%] md:w-[90%] xl:w-[96%] m-auto ">
+      <div className="flex items-center justify-between w-[90%] m-auto ">
         <div className="logo md:flex gap-20 items-center">
           <Link to="/" className="hover:cursor-pointer">
             <img src="/img/logo3.png" alt="" className="" />

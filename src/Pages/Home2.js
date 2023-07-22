@@ -2,6 +2,7 @@ import React from "react";
 import Input from "../Components/Input";
 import Navbar from "../Components/Navbar";
 import UpcomingEvents from "./UpcomingEvents";
+import Footer from "../Components/Footer";
 
 const Home2 = () => {
   function handlebuyBIBK() {
@@ -9,8 +10,9 @@ const Home2 = () => {
   }
   return (
     <>
-      <div id="top" className="py-28">
-        <div className="card pb:28  xl:pb-20 xl:grid grid-cols-2 gap-8">
+    <Navbar/>
+      <div id="top" className="pt-28 pb-18 m-auto xl:w-[90%] w-[95%]">
+        <div className="card pb:28  xl:pb-20 xl:grid grid-cols-2 gap-8 space-y-10 xl:space-y-0">
           <div className="space-y-5 text-justify rounded-xl p-5 xl:p-12 _0shine">
           <h1 className="xl:text-[40px] text-[28px] font-bold">
               BinaryBlock NFT
@@ -96,7 +98,7 @@ const Home2 = () => {
 
             <div className="xl:flex gap-5">
               {/* Third card */}
-              <div className="_0shine border xl:h-[50vh] p-5 xl:p-10 py-10 mb-5 space-y-2 xl:w-[55%]">
+              <div className="_0shine border xl:h-[40vh] p-5 xl:p-10 py-10 mb-5 space-y-2 xl:w-[55%]">
                 <div className="card-content">
                   <p className="text-justify text-sm">
                     BinaryBlock aims to sustain a lifetime of crypto earnings.
@@ -123,18 +125,20 @@ const Home2 = () => {
 
         {/* BinaryBlock Protocol */}
 
-        <div className="xl:w-[90%] m-auto">
-          <div className="text-center py-20 ">
-            <h1 className="font-bold xl:font-semibold text-2xl xl:text-3xl">
+        <div className=" m-auto ">
+          <div className=" md:py-20 py-10 space-y-2 text-center xl:text-left">
+            <h1 className="font-bold xl:font-semibold text-3xl xl:text-[50px]">
               BinaryBlock Protocol
             </h1>
-            <p className=" text-[#92D940]">
+            <p className=" text-[#92D940] text-[20px]">
               A web3 protocol for earning crypto on ethereum.
             </p>
           </div>
 
           {/* Input */}
+          <div className="w-[90%] m-auto">
           <Input />
+          </div>
         </div>
 
         {/* Upcomin Events */}
@@ -164,6 +168,7 @@ const Home2 = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

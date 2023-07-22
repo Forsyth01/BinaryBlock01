@@ -2,14 +2,15 @@ import React from "react";
 import AdminNav from "../Components/AdminNav";
 import Navbar from "../Components/Navbar";
 import Bibkcoin from "./BibkStaking";
+import Footer from "../Components/Footer";
 
 const GenesisStakingtaking = () => {
   const MyBackgroundImage = "/img/Buttonn.png";
   // const MyBackgroundImage = "/img/group1.png";
   return (
     <>
-      {/* <Navbar /> */}
-      <div className="pt-28 ">
+      <AdminNav/>
+      <div className="py-28 lg:py-2 xl:py-28 m-auto w-[90%] lg:h-[75vh] xl:h-min lg:flex  flex-col justify-center">
         <div className="_0shine space-y-5 text-justify rounded-xl p-5 xl:p-12 ">
           <div className="xl:flex items-cente justify-between space-y-4 xl:space-y-0 ">
             <div className="space-y-2">
@@ -48,7 +49,7 @@ const GenesisStakingtaking = () => {
                     // width: "400px",
                   }}
                 >
-                  <div className="flex flex-col h-[50vh] md:h-[20vh] xl:h-[50vh] space-y-2 justify-center ">
+                  <div className="flex flex-col h-[400px] md:h-[400px] xl:h-[400px] space-y-2 justify-center ">
                     <div className=" leading-tight text-center">
                       <h1 className="">
                         <span className="text-5xl no text-[#92D940] no">
@@ -85,7 +86,7 @@ const GenesisStakingtaking = () => {
           </div>
         </div>
       </div>
-      <Bibkcoin />
+      <Footer />
     </>
   );
 };

@@ -7,7 +7,7 @@ const With2 = () => {
   const MyBackgroundImage = "/img/Buttonn.png";
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="py-28 ">
         <div className="_0shine space-y-5 text-justify rounded-xl p-5 xl:p-12 ">
           <div className="xl:flex space-y-4 xl:space-y-0 items-center justify-between ">

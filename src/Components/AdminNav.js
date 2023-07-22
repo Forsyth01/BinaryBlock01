@@ -7,19 +7,19 @@ const AdminNav = () => {
   const [links, setLinks] = useState([
     {
       link: (
-        <Link to="/bibkcoinstaking">
-          <p className="" onClick={() => setMenu(false)}>
-            NFT Staking
-          </p>
+        <Link to="/app">
+    <p className="" onClick={() => setMenu(false)}>
+    Nft Staking
+    </p>
         </Link>
       ),
     },
     {
       link: (
-        <Link to="/bibkcoin">
-          <p className="" onClick={() => setMenu(false)}>
-            BibkCoin
-          </p>
+        <Link to="/bibkstaking">
+    <p className="" onClick={() => setMenu(false)}>
+    BIBK Staking
+    </p>
         </Link>
       ),
     },
@@ -44,7 +44,7 @@ const AdminNav = () => {
   return (
     <div>
       <div className={"fixed bg-black w-full py-3 z-10"}>
-        <div className="flex items-center justify-between w-[85%] md:w-[90%] xl:w-[96%] m-auto ">
+        <div className="flex items-center justify-between w-[90%] m-auto ">
           <div className="logo md:flex gap-20 items-center">
             <Link to="/" className="hover:cursor-pointer">
               <img src="/img/logo3.png" alt="" className="" />

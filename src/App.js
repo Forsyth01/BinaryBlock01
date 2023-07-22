@@ -32,8 +32,8 @@ function App() {
   return (
     <div className="">
       <div className="">
-        {<Navbar />}
-        <div className="m-auto xl:w-[90%] w-[95%]">
+        {/* {<Navbar />} */}
+        <div className="">
           <Routes>
             <Route path="/" element={<Home2 />} />
             {/* <Route path="/" element={<Home />} /> */}
@@ -42,12 +42,12 @@ function App() {
             {/* <Route path="/faqs" element={<Faq2 />} /> */}
             {/* <Route path="/faqs" element={<Faqs />} /> */}
             <Route path="/app" element={<GenesisStakingtaking />} />  
-            <Route path="/bibkcoin" element={<Bibkcoin />} />
-            <Route path="/with" element={<With2 />} /> 
-            <Route path="*" element={<NotFound />} />
+            <Route path="/bibkstaking" element={<BibkStaking />} /> 
+            {/* <Route path="/with" element={<With2 />} />  */}
+            <Route path="*" element={<NotFound />} /> 
           </Routes>
         </div>
-      <Footer />
+     
       </div>
     </div>
   );
